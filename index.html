@@ -1,10 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
     <head>
-        <title>Building HTML Forms</title>
+        <meta charset="utf-8">
+        <title>HTML Survey Forms</title>
     </head>
-
+<center>
     <body>
+        <h1>Programming Language Survey</h1>
+        <form action="/index.html" method="post">
+        <fieldset>
+              <center><legend><strong>Add User</strong></legend></center>
 
+                <div>
+                    <label for="firstName">First name</label>
+                    <input type="text" id="firstName" name="first_name">
+                </div>
+                <div>
+                    <label for="lastName">Last name</label>
+                    <input type="text" id="lastName" name="last_name">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email_address">
+                </div>
+                <div>
+                    <label for="status">Status</label>
+                    <select id="status" name="user_role_name">
+                        <option value="select">Select</option>
+                        <option value="student">Student</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="guest">Guest</option>
+                    </select>
+                </div>
+                <div>
+                    <p>
+                        <strong>Choose your favorite programming language</strong>
+                    </p>
+
+                    <input type="radio" id="language" name="language">
+                    <label for="language">HTML</label>
+
+                    <input type="radio" id="css" name="language">
+                    <label for="css">CSS</label>
+
+                    <input type="radio" id="javascript" name="language">
+                    <label for="language">JavaScript</label>
+                </div>
+                <br>
+                <div>
+                    <strong><label for="date">Current Date</label></strong>
+                    <input type="date" id="date" name="date">
+                </div>
+                <br>
+                <div>
+                    <strong><label for="bio">Comments</label></strong>
+                    <textarea id="bio" name="bio"></textarea>
+                </div>
+                <br>
+                <div>
+                    <strong><label for="newsletter">Sign up for newsletter</label></strong>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                </div>
+                <div>
+                   <strong><label for="terms">Agree to terms and conditions</label></strong>
+                    <input type="checkbox" id="terms" name="terms">
+                </div>
+                <br>
+                <div>
+                   <label for="submit"></label>
+                    <input type="submit" id="submit" name="submit">
+                </div>
+            </fieldset>
+        </form>
     </body>
+</center>
 </html>
